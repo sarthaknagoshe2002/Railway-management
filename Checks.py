@@ -141,8 +141,8 @@ def CheckConnection():
             db_Info = connection.get_server_info()
             print("Connected to MySQL Server Version", db_Info)
 
-    except Error:
-
+    except Exception as e:
+        print(e)
         print("Error connecting to MySQL Server, Make sure the MySQL Server is running and then try again!")
         print("Exiting!")
         return False

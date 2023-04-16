@@ -2,6 +2,7 @@
 
 # Importing Required Modules
 import PIL.Image
+import Checks as Check
 from PIL import ImageTk
 import Checks as Check
 from tkinter import *
